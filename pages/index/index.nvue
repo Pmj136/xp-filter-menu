@@ -1,0 +1,91 @@
+<template>
+	<view class="">
+		<xp-filter-menu :menus="menus" :options="options" />
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				val: 0,
+				menus: [{
+						key: "a",
+						title: "适用场景",
+					},
+					{
+						key: "b",
+						title: "连接方式",
+					},
+					{
+						key: "c",
+						title: "尺寸",
+					},
+					{
+						key: "d",
+						title: "背光灯效",
+					}
+				],
+				options: {
+					a: [{
+						id: 1,
+						name: '日常办公'
+					}, {
+						id: 2,
+						name: '商旅出行'
+					}, {
+						id: 3,
+						name: '静音'
+					}, {
+						id: 4,
+						name: '人体工学'
+					}, {
+						id: 5,
+						name: '高端商务'
+					}, {
+						id: 6,
+						name: '个性时尚'
+					}],
+					b: [{
+						id: 1,
+						name: '无线2.4G'
+					}, {
+						id: 2,
+						name: '有线'
+					}, {
+						id: 3,
+						name: '蓝牙'
+					}, {
+						id: 4,
+						name: '多模'
+					}],
+					c: [{
+						id: 1,
+						name: '小于100mm'
+					}, {
+						id: 2,
+						name: '100-120mm'
+					}, {
+						id: 3,
+						name: '121-130mm'
+					}],
+					d: [{
+						id: 1,
+						name: 'RGB'
+					}, {
+						id: 2,
+						name: '单光'
+					}, {
+						id: 3,
+						name: '无光'
+					}]
+		
+				}
+			}
+		},
+	}
+</script>
+
+<style scoped>
+
+</style>
